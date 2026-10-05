@@ -3,7 +3,7 @@ const { devices } = require('@playwright/test');
 
 const config = {
   testDir: './tests',
-  testMatch: '**/*.spec.ts',
+  testMatch: '**/*.spec.js',
   retries :0,
   
   /* Maximum time one test can run for. */
@@ -18,7 +18,7 @@ const config = {
   use: {
 
     browserName : 'chromium',
-    headless : true,
+    headless : false,
     screenshot : 'on',
     trace : 'on',//off,on
     
